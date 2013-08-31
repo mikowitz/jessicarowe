@@ -28,8 +28,19 @@ gem 'jquery-rails'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-group :assets do
-  gem 'coffee-rails'
-  gem 'sass-rails'
-  gem 'uglifier'
+gem 'haml-rails'
+gem 'twitter-bootstrap-rails'
+
+# assets
+gem 'sass-rails'
+gem 'coffee-rails'
+gem 'uglifier'
+gem 'therubyracer'
+gem 'less-rails'
+
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller' # for better_errors
+  gem 'quiet_assets'
+  gem 'thin'
 end

@@ -1,0 +1,22 @@
+!!!
+%html{lang: 'en'}
+  %head
+    %meta{charset: "utf-8"}
+
+    %meta{name: "viewport", content: "width=device-width, initial-scale=1.0"}
+    %link{ rel: 'shortcut icon', href: '/jessicarowe.ico' }
+
+    %title
+      = content_for?(:title) ? yield(:title) : "Jessica Rowe ElderCare Consulting"
+
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag "vendor/custom.modernizr"
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+
+  %body{class: "#{controller_name} #{action_name}"}
+    .container#content
+      = render 'shared/header'
+      = render 'shared/nav'
+
+      = yield

@@ -3,7 +3,13 @@ Jessicarowe::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  root 'home#eldercare_consulting'
+
+  get 'about'         => 'home#about'
+  get 'assessment'    => 'home#assessment'
+  get 'consultation'  => 'home#consultation'
+  get 'navigation'    => 'home#navigation'
+  get 'testimonials'  => 'home#testimonials'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
