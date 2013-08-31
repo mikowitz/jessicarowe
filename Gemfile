@@ -31,6 +31,8 @@ gem 'jquery-rails'
 gem 'haml-rails'
 gem 'twitter-bootstrap-rails'
 
+gem 'rails_12factor', group: :production
+
 # assets
 gem 'sass-rails'
 gem 'coffee-rails'
