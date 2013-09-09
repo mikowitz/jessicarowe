@@ -6,9 +6,8 @@ Jessicarowe::Application.routes.draw do
   root 'home#eldercare_consulting'
 
   get 'about'         => 'home#about'
-  get 'assessment'    => 'home#assessment'
-  get 'consultation'  => 'home#consultation'
-  get 'navigation'    => 'home#navigation'
+  get 'contact'       => 'home#contact'
+  get 'services'      => 'home#services'
   get 'testimonials'  => 'home#testimonials'
 
   # Example of regular route:

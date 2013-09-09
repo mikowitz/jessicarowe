@@ -1,9 +1,12 @@
 .row.navigation
-  %nav.navbar{ role: 'navigation' }
-    %ul.nav
-      = nav_item 'Eldercare Consulting', root_path
-      = nav_item 'Consultation', consultation_path
-      = nav_item 'Assessment', assessment_path
-      = nav_item 'Navigation', navigation_path
-      = nav_item 'Testimonials', testimonials_path
-      = nav_item 'About Jessica', about_path
+  .span8
+    %nav.navbar{ role: 'navigation' }
+      %ul.nav
+        = nav_item 'ElderCare Consulting', root_path
+        = nav_item 'Services', services_path
+        -#= nav_item 'Consultation', consultation_path
+        -#= nav_item 'Assessment', assessment_path
+        -#= nav_item 'Navigation', navigation_path
+        = nav_item 'Testimonials', testimonials_path
+        = nav_item 'About Jessica', about_path
+        = nav_item 'Contact', contact_path
