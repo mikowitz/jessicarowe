@@ -4,7 +4,7 @@ module ApplicationHelper
   end
 
   def brochure_link
-    link_to "Click here for Jessica's Brochure", asset_path('JessicaRoweElderCareConsulting.pdf'), target: :blank
+    link_to "Click here for Jessica's brochure", asset_path('JessicaRoweElderCareConsulting.pdf'), target: :blank
   end
 
   def nav_item(link_text, href)
