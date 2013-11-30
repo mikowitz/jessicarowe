@@ -1,4 +1,8 @@
 module ApplicationHelper
+  def napgcm_cert_url
+    'http://www.caremanager.org/why-care-management/certification-professional-conduct/'
+  end
+
   def nav_item(link_text, href)
     content_tag(:li) do
       link_to link_text, href
