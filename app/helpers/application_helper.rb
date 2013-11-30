@@ -3,6 +3,10 @@ module ApplicationHelper
     'http://www.caremanager.org/why-care-management/certification-professional-conduct/'
   end
 
+  def brochure_link
+    link_to "Click here for Jessica's Brochure", asset_path('JessicaRoweElderCareConsulting.pdf'), target: :blank
+  end
+
   def nav_item(link_text, href)
     content_tag(:li) do
       link_to link_text, href
