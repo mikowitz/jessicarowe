@@ -1,27 +1,27 @@
 !!!
-%html{lang: 'en'}
+%html{lang: "en"}
   %head
     %meta{charset: "utf-8"}
 
     %meta{name: "viewport", content: "width=device-width, initial-scale=1.0"}
-    %link{ rel: 'shortcut icon', href: '/jessicarowe.ico' }
+    %link{ rel: "shortcut icon", href: "/jessicarowe.ico" }
 
     %title
       = content_for?(:title) ? yield(:title) : "Jessica Rowe ElderCare Consulting"
 
-    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+    = stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true
     = javascript_include_tag "vendor/custom.modernizr"
-    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
 
   %body{class: "#{controller_name} #{action_name}"}
     .container#content
-      = render 'shared/header'
-      = render 'shared/nav'
+      = render "shared/header"
+      = render "shared/nav"
 
       = yield
 
       %footer
         .right
-          Jessica Rowe
-          = link_to image_tag('napgcm_certified_bw.jpg', size: '75x75'), napgcm_cert_url, target: :blank
+          = link_to image_tag("napgcm_certified_bw.jpg", size: "75x75"), napgcm_cert_url, target: :blank
+          = image_tag("rainbow.png", size: "75x75", style: "padding-left:35px;")
