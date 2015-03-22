@@ -3,7 +3,9 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0'
 gem 'pg'
 gem 'turbolinks'
-
+gem 'activeadmin', "~> 1.0.0.pre1"
+gem 'devise'
+gem 'draper'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby

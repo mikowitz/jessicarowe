@@ -1,0 +1,12 @@
+= page_header("Presentation Schedule")
+
+.row.content
+  - @events.each do |event|
+    .event
+      %h3.title= event.date_and_title
+      %h4.time= event.time
+      %p= event.notes
+      .address
+        = event.address
+      = event.contact
+      = event.rsvp

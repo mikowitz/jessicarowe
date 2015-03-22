@@ -1,4 +1,6 @@
 Jessicarowe::Application.routes.draw do
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -9,6 +11,7 @@ Jessicarowe::Application.routes.draw do
   get 'contact'               => 'home#contact'
   get 'services'              => 'home#services'
   get 'making_a_difference'   => 'home#making_a_difference'
+  get "schedule"              => "home#schedule"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
