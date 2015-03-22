@@ -29,7 +29,7 @@ ActiveAdmin.register Event do
 
   form do |f|
     f.inputs "Event" do
-      f.input :date, as: :date_picker
+      f.input :date
       f.input :time
       f.input :title
       f.input :notes, input_html: { rows: 10 }
