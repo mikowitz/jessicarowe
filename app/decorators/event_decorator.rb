@@ -11,19 +11,27 @@ class EventDecorator < Draper::Decorator
     [object.date.strftime("%B %d, %Y"), object.title].join(" - ")
   end
 
-  def rsvp
+  def rsvp(show_title: true)
     return nil unless object.rsvp.present?
-    content = build_links(object.rsvp)
-    content_tag(:p) do
-      content_tag(:b, "RSVP: ") + content_tag(:span, content)
+    content = content_tag(:span, build_links(object.rsvp))
+    if show_title
+      content_tag(:p) do
+        content_tag(:b, "RSVP: ") + content
+      end
+    else
+      content_tag(:p, content)
     end
   end
 
-  def contact
+  def contact(show_title: true)
     return nil unless object.contact.present?
-    content = build_links(object.contact)
-    content_tag(:p) do
-      content_tag(:b, "Contact: ") + content_tag(:span, content)
+    content = content_tag(:span, build_links(object.contact))
+    if show_title
+      content_tag(:p) do
+        content_tag(:b, "Contact: ") + content
+      end
+    else
+      contact_tag(:p, content)
     end
   end
 
