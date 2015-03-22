@@ -2,6 +2,13 @@ ActiveAdmin.register Event do
   permit_params :date, :time, :title, :notes, :address_1, :address_2, :city_state_zip,
     :rsvp, :contact, :address
 
+  index do
+    column :date
+    column :time
+    column :title
+    actions
+  end
+
   show do
     attributes_table do
       row :date
