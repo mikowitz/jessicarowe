@@ -31,7 +31,7 @@ class EventDecorator < Draper::Decorator
         content_tag(:b, "Contact: ") + content
       end
     else
-      contact_tag(:p, content)
+      content_tag(:p, content)
     end
   end
 
