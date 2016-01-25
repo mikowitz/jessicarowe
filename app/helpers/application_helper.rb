@@ -3,6 +3,10 @@ module ApplicationHelper
     'http://www.caremanager.org/why-care-management/certification-professional-conduct/'
   end
 
+  def alcm_url
+    "http://www.aginglifecare.org"
+  end
+
   def brochure_link
     link_to "Click here for Jessica's brochure", asset_path('JessicaRoweElderCareConsulting.pdf'), target: :blank
   end

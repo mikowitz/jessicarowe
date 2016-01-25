@@ -31,7 +31,7 @@ gem 'jquery-rails'
 # gem 'debugger', group: [:development, :test]
 
 gem 'haml-rails'
-gem 'twitter-bootstrap-rails'
+gem 'twitter-bootstrap-rails', "~> 2.2.8"
 
 gem 'rails_12factor', group: :production
 
