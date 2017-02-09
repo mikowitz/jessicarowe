@@ -23,5 +23,6 @@
 
       %footer
         .right
-          = link_to image_tag("alcm-logo.jpg", style: "width: 2in !important;"), alcm_url, target: :blank, class: "alcm-logo"
+          - if action_name != "about"
+            = link_to image_tag("alcm-logo.jpg", style: "width: 2in !important;"), alcm_url, target: :blank, class: "alcm-logo"
           = image_tag("rainbow.png", size: "75x75", style: "padding-left:35px;")

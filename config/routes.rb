@@ -7,7 +7,7 @@ Jessicarowe::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'home#eldercare_consulting'
 
-  get 'about_jessica'         => 'home#about'
+  get 'about_us'         => 'home#about'
   get 'contact'               => 'home#contact'
   get 'services'              => 'home#services'
   get 'making_a_difference'   => 'home#making_a_difference'
@@ -47,7 +47,7 @@ Jessicarowe::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'
