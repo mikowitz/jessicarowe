@@ -7,10 +7,7 @@ Jessicarowe::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root "home#eldercare_consulting"
 
-  get "about_us"         => "home#about"
-  get "continuing_education_topics" => "home#continuing_education"
   get "contact" => "home#contact"
-  get "schedule"              => "home#schedule"
 
   # Example of regular route:
   #   get "products/:id" => "catalog#view"
