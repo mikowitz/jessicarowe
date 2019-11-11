@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.0.0'
+gem 'rails', '4.0.3'
 gem 'pg'
 gem 'turbolinks'
 gem 'activeadmin', "~> 1.0.0.pre1"
